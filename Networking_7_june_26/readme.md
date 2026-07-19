@@ -1,141 +1,58 @@
-# Terraform Practice Repository
+# Azure Networking using Terraform
 
-## 📖 Overview
+This repository contains Terraform configurations for provisioning core **Azure Networking** resources. Each Azure resource is organized into its own folder to understand the deployment and configuration of networking components individually.
 
-Welcome to my **Terraform Practice Repository**.
-
-This repository is dedicated to learning and practicing **Terraform** by building Infrastructure as Code (IaC) projects. It contains Terraform configuration files, reusable modules, and hands-on examples while following Terraform best practices and industry standards.
-
-The primary goal of this repository is to gain practical experience with Terraform, understand modular infrastructure design, and build reusable, scalable, and maintainable infrastructure.
-
----
-
-## 🎯 Objectives
-
-* Learn Terraform fundamentals
-* Practice writing Terraform configuration files
-* Create reusable Terraform modules
-* Understand Infrastructure as Code (IaC)
-* Follow Terraform best practices
-* Manage infrastructure efficiently
-* Experiment with different cloud resources
-
----
-
-## 📂 Repository Structure
+## 📂 Project Structure
 
 ```text
-terraform-practice/
+Networking_7_june_26/
 │
-├── modules/                # Reusable Terraform modules
+├── azurerm_resource_group/
+├── azurerm_virtual_network/
+├── azurerm_subnet/
+├── azurerm_nsg/
+├── azurerm_public_ip/
+├── azurerm_nic/
+├── azurerm_virtual_machine/
+├── azurerm_bastion/
+├── azurerm_vnet_peering/
 │
-├── examples/               # Example implementations
-│
-├── environments/           # Environment-specific configurations
-│   ├── dev/
-│   ├── test/
-│   └── prod/
-│
-├── main.tf                 # Main Terraform configuration
-├── variables.tf            # Input variables
-├── outputs.tf              # Output values
-├── provider.tf             # Provider configuration
-├── terraform.tfvars        # Variable values (ignored if sensitive)
-├── versions.tf             # Terraform & provider versions
+├── .gitignore
 └── README.md
 ```
 
----
+## 🚀 What I Practiced
 
-## 🛠 Technologies
+- Azure Resource Group
+- Virtual Network (VNet)
+- Subnets
+- Network Security Groups (NSG)
+- Public IP Addresses
+- Network Interface (NIC)
+- Virtual Machines (VM)
+- Azure Bastion
+- Virtual Network Peering
+- Azure Networking Fundamentals
 
-* Terraform
-* Infrastructure as Code (IaC)
-* Cloud Providers (Azure, AWS, or GCP)
-* Git & GitHub
+## 🛠️ Technologies
 
----
+- Terraform
+- Microsoft Azure
+- Git & GitHub
+- Visual Studio Code
 
-## 🚀 Topics Covered
-
-* Providers
-* Resources
-* Variables
-* Outputs
-* Data Sources
-* Local Values
-* Modules
-* State Management
-* Backend Configuration
-* Workspaces
-* Provisioners
-* Remote State
-* Lifecycle Rules
-* Dependencies
-* Dynamic Blocks
-* Functions
-* Expressions
-* Best Practices
-
----
-
-## ▶️ Getting Started
-
-### Initialize Terraform
+## ▶️ Usage
 
 ```bash
 terraform init
-```
-
-### Validate Configuration
-
-```bash
 terraform validate
-```
-
-### Format Code
-
-```bash
-terraform fmt
-```
-
-### Preview Changes
-
-```bash
 terraform plan
-```
-
-### Apply Infrastructure
-
-```bash
 terraform apply
 ```
 
-### Destroy Infrastructure
+## 📌 Objective
 
-```bash
-terraform destroy
-```
+Learn and deploy Azure networking resources using Terraform while understanding how different networking components work together to build a secure and scalable Azure infrastructure.
 
 ---
-
-## 📚 Learning Goals
-
-* Build reusable modules
-* Improve Terraform project structure
-* Learn production-ready practices
-* Write clean and maintainable code
-* Understand state management
-* Explore advanced Terraform features
-
----
-
-## ⚠️ Note
-
-This repository is intended for learning and experimentation. Infrastructure and configurations may change frequently as new concepts are explored.
-
----
-
-## 📄 License
-
-This project is open for learning and educational purposes.
+⭐ This repository is part of my Terraform learning journey on Microsoft Azure.
